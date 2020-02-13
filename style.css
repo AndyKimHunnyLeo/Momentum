@@ -1,30 +1,57 @@
-body{
-    background-color: #3498db;
+html,
+body {
+	background-color: #3498db;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+	/* justify-content: space-between; */
+	/* justify-content: center;
+	flex-direction: column; */
+	/* align-items: center; */
+}
+
+.greeting {
+	background-color: brown;
+}
+.js-toDoForm {
+	background-color: purple;
+}
+.js-toDoList {
+	background-color: white;
 }
 .form,
-.greetings{
-    display:none;
+.greetings {
+	display: none;
 }
-.showing{
-    display: block;
+.showing {
+	display: block;
 }
 
-
-
-@keyframes fadeIn{
-    from{
-        opacity :0;
-    }
-    to{
-        opacity: 1;
-    }
+.js-clock {
+	background-color: black;
+	color: white;
 }
-.bgImage{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    animation: fadeIn .5s linear;
+.js-weather {
+	background-color: burlywood;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.bgImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	animation: fadeIn .5s linear;
 }
