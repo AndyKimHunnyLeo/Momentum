@@ -1,32 +1,96 @@
 body {
-	background-color: #3498db;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+  background-color: #3498db;
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
-.form,
-.greetings {
-	display: none;
+.father {
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
 }
+.js-clock {
+  color: white;
+  font-size: 60px;
+
+  /* background-color: violet; */
+  /* font-size: 60px; */
+}
+.js-clock-clock {
+  margin: 0;
+}
+.js-form,
+.greeting {
+  color: white;
+  /* background-color: blue; */
+  font-size: 60px;
+  display: none;
+}
+.js-inputName {
+  background-color: transparent;
+  /* font-: white; */
+  color: white;
+  border: none;
+  font-size: 30px;
+  border-bottom: 3px solid white;
+}
+
 .showing {
-	display: block;
+  display: block;
+}
+.js-toDoInput {
+  background-color: transparent;
+  color: white;
+  /* font-: white; */
+  border: none;
+  font-size: 30px;
+  border-bottom: 3px solid white;
+}
+::placeholder {
+  color: white;
+  text-align: center;
+  opacity: 1; /* Firefox */
+}
+.js-toDoform {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  border-bottom: 3px solid white;
+}
+.js-toDoList {
+  list-style-type: none;
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #ecf0f1;
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .bgImage {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	animation: fadeIn .5s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.js-weather {
+  position: absolute;
+  font-style: italic;
+  font-size: 15px;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
 }

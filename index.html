@@ -1,34 +1,35 @@
-<!DOCTYPE html>
-<html>
+<!-- <!DOCTYPE html> -->
+<html lang="en">
   <head>
-    <title>Something</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <title>Momentum</title>
   </head>
-
   <body>
-    <div class="father">
-    <div class="js-clock ">
-      <h1>00:01</h1>
+    <div class="fatherOfFather">
+      <div class="father">
+        <div class="js-clock ">
+          <h1 class="js-clock-clock">00:01</h1 class="js-clock-clock">
+        </div>
+        <form class="js-form form">
+          <input class="js-inputName" type="text" placeholder="What is your name? " />
+        </form>
+        <p class="js-greetings greeting"></p>
+        <form class="js-toDoForm">
+          <input class="js-toDoInput" type="text" placeholder="Write a to do list" />
+        </form>
+
+        <ul class="js-toDoList"></ul>
+
+        <span class="js-weather"></span>
+        <script src="clock.js"></script>
+        <script src="gretting.js"></script>
+        <script src="todolist.js"></script>
+        <script src="bg.js"></script>
+        <script src="weather.js"></script>
+      </div>
     </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name? " />
-  </form>
-  <h4 class="js-greetings greeting a"></h4>
-  <form class="js-toDoForm">
-    <input type="text" placeholder="Write a to do list" />
-  </form>
-
-  <ul class="js-toDoList">
-
-  </ul>
-
-  <span class="js-weather"></span>
-    <script src="clock.js"></script>
-    <script src="gretting.js"></script>
-    <script src="todolist.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
-  </div>
   </body>
 </html>
