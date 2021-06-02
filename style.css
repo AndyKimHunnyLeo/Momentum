@@ -1,9 +1,9 @@
 body {
-  background-color: #3498db;
-  height: 100%;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+  margin: 0px;
 }
 .father {
   display: flex;
@@ -16,9 +16,6 @@ body {
 .js-clock {
   color: white;
   font-size: 60px;
-
-  /* background-color: violet; */
-  /* font-size: 60px; */
 }
 .js-clock-clock {
   margin: 0;
@@ -36,6 +33,7 @@ body {
   color: white;
   border: none;
   font-size: 30px;
+
   border-bottom: 3px solid white;
 }
 
@@ -48,7 +46,23 @@ body {
   /* font-: white; */
   border: none;
   font-size: 30px;
+
   border-bottom: 3px solid white;
+}
+.deleteToDo {
+  background-color: transparent;
+
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 20px;
+
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.toDoContainer {
+  display: flex;
+  align-items: center;
 }
 ::placeholder {
   color: white;
@@ -67,6 +81,7 @@ body {
   margin-bottom: 5px;
   text-align: center;
   color: #ecf0f1;
+  margin-left: vw;
 }
 
 @keyframes fadeIn {
